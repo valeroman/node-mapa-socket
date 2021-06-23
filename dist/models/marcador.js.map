@@ -1,0 +1,1 @@
+{"version":3,"file":"marcador.js","sourceRoot":"","sources":["../../models/marcador.ts"],"names":[],"mappings":";;AACA,MAAM,QAAQ;IAMV,YAAY,EAAU,EAAE,GAAW,EAAE,GAAW;QAC5C,IAAI,CAAC,EAAE,GAAG,EAAE,CAAC;QACb,IAAI,CAAC,GAAG,GAAG,GAAG,CAAC;QACf,IAAI,CAAC,GAAG,GAAG,GAAG,CAAC;IACnB,CAAC;CACJ;AAED,kBAAe,QAAQ,CAAC"}
