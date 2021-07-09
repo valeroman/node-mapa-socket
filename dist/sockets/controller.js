@@ -11,6 +11,8 @@ exports.socketController = (socket) => {
     socket.emit('marcadores-activos', marcadores.activosArr);
     // marcador-nuevo
     socket.on('marcador-nuevo', (marcador) => {
+        // console.log(socket.id);
+        console.log('inicial', marcador);
         marcadores.agregarMarcador(marcador);
         socket.broadcast.emit('marcador-nuevo', marcador);
     });
@@ -18,6 +20,7 @@ exports.socketController = (socket) => {
     socket.on('marcador-actualizado', (marcador) => {
         marcadores.actualizarMarcador(marcador);
         socket.broadcast.emit('marcador-actualizado', marcador);
+        console.log('actualizado', marcador);
     });
 };
 //# sourceMappingURL=controller.js.map

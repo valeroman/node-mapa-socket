@@ -10,6 +10,8 @@ export const socketController = (socket: Socket) => {
 
     // marcador-nuevo
     socket.on('marcador-nuevo', (marcador) => {
+        // console.log(socket.id);
+        // console.log('inicial', marcador);
         marcadores.agregarMarcador(marcador);
         socket.broadcast.emit('marcador-nuevo', marcador);
     });
@@ -18,6 +20,6 @@ export const socketController = (socket: Socket) => {
     socket.on('marcador-actualizado', (marcador) => {
         marcadores.actualizarMarcador(marcador);
         socket.broadcast.emit('marcador-actualizado', marcador);
-    });
-   
+        // console.log('actualizado', marcador);
+    });   
 }
